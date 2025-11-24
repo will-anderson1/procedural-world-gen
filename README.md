@@ -17,4 +17,4 @@
 - `w`: increase speed
 - `s`: decrease speed
 - `f`: fullscreen toggle
-- `esc`: windoweed
+- `esc`: windowed mode
