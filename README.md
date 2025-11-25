@@ -1,7 +1,7 @@
 ### Prereqs
-- SDL3
-- glm
-- OpenGL
+- SDL3 (installable via brew)
+- glm (installable via brew)
+- OpenGL (comes with macos)
 
 ### Building
 `cmake -B build -S . && cmake --build build`
