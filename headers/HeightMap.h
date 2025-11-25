@@ -2,6 +2,7 @@
 #define HEIGHTMAP_H
 
 #include <vector>
+#include "config.h"
 struct HeightMap {
     std::vector<std::vector<float> > heightMap;
     float minHeight;
@@ -9,7 +10,7 @@ struct HeightMap {
     int width;
     int height;
     HeightMap(int width, int height) : width(width), height(height) {}
-    void generateHeightMap();
+    void generateHeightMap(const Config& config);
 };
 
 #endif

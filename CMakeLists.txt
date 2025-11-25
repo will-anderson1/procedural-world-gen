@@ -12,7 +12,7 @@ find_package(OpenGL REQUIRED)
 include_directories(${OPENGL_INCLUDE_DIR})
 
 
-add_executable(ProceduralWorldGen main.cpp impl/HeightMap.cpp impl/Noise.cpp impl/utils.cpp impl/InputHandler.cpp headers/glad/glad.c)
+add_executable(ProceduralWorldGen main.cpp impl/HeightMap.cpp impl/Noise.cpp impl/utils.cpp impl/InputHandler.cpp impl/ConfigHelper.cpp headers/glad/glad.c)
 
 # Link Libraries
 target_link_libraries(ProceduralWorldGen PRIVATE glm::glm ${SDL3_LIBRARY} ${OPENGL_LIBRARIES})

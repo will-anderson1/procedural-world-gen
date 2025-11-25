@@ -3,6 +3,7 @@
 
 #include <vector>
 #include "FastNoiseLite.h"
+#include "config.h"
 struct Noise {
     int width;
     int height;
@@ -10,6 +11,6 @@ struct Noise {
     FastNoiseLite noise2;
     std::vector<float> noiseData;
     Noise(int width, int height);
-    void generateNoise();
+    void generateNoise(const Config& config);
 };
 #endif

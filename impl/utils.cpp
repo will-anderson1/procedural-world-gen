@@ -15,7 +15,7 @@
 #include <string>
 #include <vector>
 #include <sstream>
-#include "../config.h"
+#include "../headers/config.h"
 
 int clamp(int a, int lo, int hi){
    if (a < lo){
@@ -198,12 +198,12 @@ SDL_Window* initSDL(int screenWidth, int screenHeight) {
    }
    return window;
 }
-std::vector<float> populateVertices(const HeightMap& heightMap){
+std::vector<float> populateVertices(const HeightMap& heightMap, const Config& config){
    std::vector<float> vertices;
    for(int i = 0; i < heightMap.height; i++){
       for(int j = 0; j < heightMap.width; j++){
          vertices.push_back((float)j);
-         vertices.push_back(heightMap.heightMap[j][i] * Config::heightmapMultiplier);
+         vertices.push_back(heightMap.heightMap[j][i] * config.heightmapMultiplier);
          vertices.push_back((float)i);
          // texture coordinates
          vertices.push_back((float)j);
