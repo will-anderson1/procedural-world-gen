@@ -2,7 +2,7 @@
 #include <fstream>
 #include <string>
 #include "../headers/json.hpp"
-#include "../headers/config.h"
+#include "../headers/Config.h"
 #include <iostream>
 bool floatsEqual(float a, float b) {
     return abs(a - b) < 0.01f;

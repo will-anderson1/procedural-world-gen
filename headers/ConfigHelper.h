@@ -4,7 +4,7 @@
 #include <string>
 #include <fstream>
 #include "json.hpp"
-#include "config.h"
+#include "Config.h"
 
 struct ConfigHelper {
     static bool loadConfig(const std::string& filename, Config& config);

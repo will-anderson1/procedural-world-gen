@@ -3,7 +3,7 @@
 
 #include <vector>
 #include "FastNoiseLite.h"
-#include "config.h"
+#include "Config.h"
 struct Noise {
     int width;
     int height;

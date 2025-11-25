@@ -2,7 +2,7 @@
 #define HEIGHTMAP_H
 
 #include <vector>
-#include "config.h"
+#include "Config.h"
 struct HeightMap {
     std::vector<std::vector<float> > heightMap;
     float minHeight;

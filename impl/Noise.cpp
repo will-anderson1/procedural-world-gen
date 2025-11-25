@@ -1,6 +1,6 @@
 #include "../headers/Noise.h"
 #include "../headers/FastNoiseLite.h"
-#include "../headers/config.h"
+#include "../headers/Config.h"
 
 Noise::Noise(int width, int height) : width(width), height(height) {
     noise.SetNoiseType(FastNoiseLite::NoiseType_Perlin);

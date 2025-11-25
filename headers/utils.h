@@ -8,7 +8,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <vector>
-#include "config.h"
+#include "Config.h"
 void write_ppm(const char* imgName, int width, int height, int bits, const HeightMap& heightMap);
 GLuint getShaders();
 SDL_Window* initSDL(int screenWidth, int screenHeight);

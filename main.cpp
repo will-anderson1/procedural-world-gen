@@ -14,7 +14,7 @@
 #include "headers/utils.h"
 #include "headers/InputHandler.h"
 #include "headers/ConfigHelper.h"
-#include "headers/config.h"
+#include "headers/Config.h"
 #include <thread>
 #include <chrono>
 Config config;

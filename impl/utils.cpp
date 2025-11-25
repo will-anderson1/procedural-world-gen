@@ -15,7 +15,7 @@
 #include <string>
 #include <vector>
 #include <sstream>
-#include "../headers/config.h"
+#include "../headers/Config.h"
 
 int clamp(int a, int lo, int hi){
    if (a < lo){

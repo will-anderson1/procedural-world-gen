@@ -1,6 +1,6 @@
 #include "../headers/HeightMap.h"
 #include "../headers/Noise.h"
-#include "../headers/config.h"
+#include "../headers/Config.h"
 void HeightMap::generateHeightMap(const Config& config) {
     heightMap.resize(width);
     for (int i = 0; i < width; ++i) {
